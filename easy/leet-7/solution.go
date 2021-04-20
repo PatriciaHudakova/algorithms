@@ -1,5 +1,9 @@
 /*
-leet-7: print the reverse of an integer https://leetcode.com/problems/reverse-integer/
+https://leetcode.com/problems/reverse-integer/
+
+Example:
+Input: x = 123
+Output: 321
  */
 package main
 
