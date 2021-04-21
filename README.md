@@ -1,4 +1,4 @@
-#leetcode-solutions
+# leetcode-solutions
 
 A repository of solutions to a range of leetcode algorithm exercises written in GO.
 
