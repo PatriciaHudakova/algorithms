@@ -3,22 +3,22 @@ https://leetcode.com/problems/sign-of-the-product-of-an-array/
 Input: nums = [-1,-2,-3,-4,3,2,1]
 Output: 1
 Explanation: The product of all values in the array is 144, and signFunc(144) = 1
- */
+*/
 package main
 
 import "fmt"
 
 func main() {
-	fmt.Println(arraySign([]int{-1,-2,-3,-4,3,2,1}))
-	fmt.Println(arraySignPreferred([]int{-1,-2,-3,-4,3,2,1}))
+	fmt.Println(arraySign([]int{-1, -2, -3, -4, 3, 2, 1}))
+	fmt.Println(arraySignPreferred([]int{-1, -2, -3, -4, 3, 2, 1}))
 
 	// overflow use case
-	fmt.Println(arraySign([]int{9,72,34,29,-49,-22,-77,-17,-66,-75,-44,-30,-24}))
+	fmt.Println(arraySign([]int{9, 72, 34, 29, -49, -22, -77, -17, -66, -75, -44, -30, -24}))
 }
 
 /*
 As per requirement, we evaluate the product value
- */
+*/
 func arraySign(nums []int) int {
 	product := 1
 	for _, value := range nums {
@@ -61,7 +61,7 @@ func arraySignPreferred(nums []int) int {
 	}
 
 	// if the amount of -ve integers are odd then the overall value must be negative
-	if negCounter % 2 == 0 {
+	if negCounter%2 == 0 {
 		return 1
 	}
 

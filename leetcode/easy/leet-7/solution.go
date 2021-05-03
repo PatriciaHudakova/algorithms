@@ -4,7 +4,7 @@ https://leetcode.com/problems/reverse-integer/
 Example:
 Input: x = 123
 Output: 321
- */
+*/
 package main
 
 import (
@@ -30,10 +30,10 @@ func reverse(x int) int {
 
 	// 32 bit limit for an integer
 	limit := 2147483648
-	
+
 	reverse := 0
 	for x > 0 {
-		reverse = (reverse * 10) +  x % 10
+		reverse = (reverse * 10) + x%10
 		x /= 10
 	}
 

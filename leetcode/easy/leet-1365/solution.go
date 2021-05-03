@@ -9,13 +9,13 @@ For nums[1]=1 does not exist any smaller number than it.
 For nums[2]=2 there exist one smaller number than it (1).
 For nums[3]=2 there exist one smaller number than it (1).
 For nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).
- */
+*/
 package main
 
 import "fmt"
 
 func main() {
-	array := smallerNumbersThanCurrent([]int{8,1,2,2,3})
+	array := smallerNumbersThanCurrent([]int{8, 1, 2, 2, 3})
 	fmt.Println(array)
 }
 
