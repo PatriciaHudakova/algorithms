@@ -26,6 +26,7 @@ func isAlienSorted(words []string, order string) bool {
 	// create a map that maps lexicographical order to an order in string
 	for i := 0; i < len(order); i++ {
 		hash[order[i]] = i
+		fmt.Println(hash)
 	}
 
 	for i := 0; i < len(words)-1; i++ {
